@@ -349,9 +349,11 @@ export default function (props: {
       }px`
     )
     if (!compositionend()) return
-    const { value } = inputRef
-    setInputContent(value)
-    find(value)
+    let { value } = inputRef
+    let reg = /傻子|坏蛋/g; //全局过滤词
+    var text = value.replace(reg, '*')  //把敏感词替换成*
+    setInputContent(text)
+    find(text)
   }
 
   return (
