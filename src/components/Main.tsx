@@ -350,7 +350,7 @@ export default function (props: {
     )
     if (!compositionend()) return
     let { value } = inputRef
-    let reg = /傻子|坏蛋/g; //全局过滤词
+    let reg = /台湾|TW|法轮功|反动|敏感|民主|自由|独立|民权|人权|独裁|颠覆|分裂|造谣|谣言|腐败|贪污|赌博|色情|暴力|恐怖|革命|反共|台独|九评|六四|水货|黄赌毒|神教|邪教|洗脑|煽动|暴乱|暴徒|暴力恐怖主义|独立运动|民族分裂|民主自由|反腐败|反贪污|反权贵|反黑暴/g; //全局过滤词
     var text = value.replace(reg, '*')  //把敏感词替换成*
     setInputContent(text)
     find(text)
