@@ -3,12 +3,12 @@ export const setting = {
   archiveSession: false,
   openaiAPIKey: "",
   openaiAPITemperature: 60,
-  password: "",
+  password: "dash",
   systemRule: ""
 }
 
 export const message = `Powered by OpenAI Vercel
-- 学会如何拥有自己的chatGPT，可以[加入我的星球](https://t.zsxq.com/0ckONzbJ0)，不仅有教程提示，还有行业内各种动态更新，但不接受任何付费功能请求
+- 维护费用过高，怀疑被刷API，因此设置密码。[加入我的星球](https://t.zsxq.com/0ckONzbJ0)，获取密码
 - [[Shift]] + [[Enter]] 换行。开头输入 [[/]] 或者 [[空格]] Prompt 预设。[[↑]] 可编辑最近一次提问。点击顶部名称滚动到顶部，点击输入框滚动到底部。`
 
 export type Setting = typeof setting
